@@ -1,13 +1,7 @@
 import React from 'react';
-import { getString } from 'firebase/remote-config';
 import { Paper } from '~/components';
-import { firebaseRemoteConfig } from '~/services';
 
 const Demo: React.FC = () => {
-  const remoteConfigValueTest = getString(
-    firebaseRemoteConfig,
-    'remoteConfigTest' as FirebaseRemoteConfigKeys,
-  );
   return (
     <div
       style={{
@@ -18,7 +12,7 @@ const Demo: React.FC = () => {
       }}
     >
       <Paper>
-        <h1>{remoteConfigValueTest}</h1>
+        <h1>heyyy</h1>
       </Paper>
     </div>
   );
